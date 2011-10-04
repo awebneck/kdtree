@@ -1,7 +1,8 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
-describe "Kdtree" do
-  it "fails" do
-    fail "hey buddy, you should probably rename this file and start specing for real"
+describe KDTree do
+  it "should exist" do
+    Module.constants.should include :KDTree
+    KDTree.should be_a Module
   end
 end
