@@ -26,7 +26,7 @@ class KDTree
     end
 
     def intersects?(target, radius, metric)
-      near_point = KDPoint.new
+      near_point = KDTree::Point.new
       target.length.times do |i|
         if target[i] <= @minima[i]
           coord = @minima[i]
