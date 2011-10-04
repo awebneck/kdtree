@@ -17,8 +17,8 @@ Jeweler::Tasks.new do |gem|
   gem.name = "kdtree"
   gem.homepage = "http://github.com/awebneck/kdtree"
   gem.license = "MIT"
-  gem.summary = %Q{TODO: A pure-ruby kd-tree implementation}
-  gem.description = %Q{TODO: Great for nearest neighbor search in k dimensions! (as long as k is reasonable)}
+  gem.summary = %Q{A pure-ruby kd-tree implementation}
+  gem.description = %Q{Great for nearest neighbor search in k dimensions! (as long as k is reasonable)}
   gem.email = "jeremy@jeremypholland.com"
   gem.authors = ["Jeremy Holland"]
   # dependencies defined in Gemfile
