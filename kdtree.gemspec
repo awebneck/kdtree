@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = "kdtree"
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Jeremy Holland"]
@@ -19,12 +19,17 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
     ".rspec",
+    ".rvmrc",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
+    "kdtree.gemspec",
     "lib/kdtree.rb",
+    "lib/kdtree/hyper_rect.rb",
+    "lib/kdtree/point.rb",
     "spec/kdtree_spec.rb",
     "spec/spec_helper.rb"
   ]
