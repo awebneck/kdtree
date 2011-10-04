@@ -1,5 +1,5 @@
-require File.dirname(__FILE__)+'/kdtree/point'
-require File.dirname(__FILE__)+'/kdtree/hyper_rect'
+require File.dirname(__FILE__)+'/kd_tree/point'
+require File.dirname(__FILE__)+'/kd_tree/hyper_rect'
 
 class KDTree
   attr_accessor :exemplar, :split, :kd_left, :kd_right
