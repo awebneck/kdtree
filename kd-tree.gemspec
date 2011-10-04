@@ -26,7 +26,7 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "kdtree.gemspec",
+    "kd-tree.gemspec",
     "lib/kd-tree.rb",
     "lib/kd_tree.rb",
     "lib/kd_tree/hyper_rect.rb",
