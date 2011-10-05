@@ -1,17 +1,14 @@
 class KDTree
   class HyperRect
     attr_accessor :minima, :maxima
+
     def initialize(k)
-      @minima = []
-      @maxima = []
-      k.times do |i|
-        @minima << -Float::INFINITY
-        @maxima << Float::INFINITY
-      end
+      @minima = Array.new k, -Float::INFINITY
+      @maxima = Array.new k, Float::INFINITY
     end
 
     def clone
-      cl = self.class.new @minima.length
+      cl = super
       cl.minima = @minima.clone
       cl.maxima = @maxima.clone
       cl
@@ -25,7 +22,7 @@ class KDTree
       [left_hr, right_hr]
     end
 
-    def intersects?(target, radius, metric)
+    def intersects?(target, radius, metric = :euclidean)
       near_point = KDTree::Point.new
       target.length.times do |i|
         if target[i] <= @minima[i]
