@@ -18,7 +18,7 @@ describe KDTree do
     end
 
     it "should accept an array of k-dimensional points of numerics" do
-      lambda { KDTree.new([KDTree::Point.new([1,2,3]),KDTree::Point.new([4,5,6])])}.should_not raise_error
+      lambda { KDTree.new([KDTree::Point.new(1,2,3),KDTree::Point.new(4,5,6)])}.should_not raise_error
     end
   end
 end
